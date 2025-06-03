@@ -1,6 +1,14 @@
-.header  {
+.header {
   font-family: monospace;
   background: papayawhip;
+  /*Get all the items in the header to same row and get them centered*/
+  display: flex;
+  justify-content: space-between;
+}
+
+.header .logo {
+  display: flex;
+  justify-content: center;
 }
 
 .logo {
@@ -14,6 +22,8 @@
 ul {
   /* this removes the dots on the list items*/
   list-style-type: none;
+  /*Center the items inside ul and get them in to same row*/
+  display: flex;
 }
 
 a {
@@ -22,4 +32,21 @@ a {
   padding: 8px;
   /* this removes the line under the links */
   text-decoration: none;
+}
+
+li {
+  /*Padding for the items*/
+  padding: 5px;
+}
+
+/*To make left links, display on the left side of the page*/
+.header .left-links {
+  display: flex;
+  justify-content: left;
+}
+
+/*To make right links, display on the right side of the page*/
+.header .right-links {
+  display: flex;
+  justify-content: right;
 }
